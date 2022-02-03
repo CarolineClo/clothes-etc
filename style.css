@@ -8,6 +8,10 @@ header {
   padding: 1rem;
 }
 
+main {
+  margin: 2rem;
+}
+
 header > h1 {
   color: #d8b4a0;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -20,7 +24,7 @@ nav > a {
   padding: 0 3rem 0 0;
 }
 
-.product img {
+img {
   max-width: 100%;
 }
 
@@ -77,4 +81,81 @@ footer {
 
 h6 {
   padding: 1rem;
+}
+
+.productList main {
+  margin: 2rem;
+}
+
+.productList article {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 0;
+}
+
+.productList p {
+  margin: 0.5rem 0 0;
+}
+
+.productList article .discounted {
+  display: none;
+}
+
+.productList article.onSale .discounted {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.productList article.onSale .price span {
+  display: initial;
+}
+
+.productList article .price span {
+  display: none;
+}
+
+.productList article .discounted p:last-child {
+  background-color: #d77a61;
+  margin: 0;
+  padding: 1rem;
+}
+
+.productList article .discounted p:first-child {
+  font-size: 1.2rem;
+}
+
+.productList article.soldOut img {
+  opacity: 30%;
+}
+
+.productList article.soldOut::before {
+  content: "Sold Out";
+  position: absolute;
+  background-color: #223843;
+  color: #eff1f3;
+  padding: 1rem;
+}
+
+.category section.letterBrowse {
+  border-top: 1px solid black;
+  margin: 1rem;
+}
+
+.category section.letterBrowse ul {
+  list-style: none;
+}
+
+@media screen and (min-width: 760px) {
+  .category .browseBrands {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .category .browseBrands {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
