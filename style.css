@@ -113,6 +113,10 @@ h6 {
   margin: 0.5rem 0 0;
 }
 
+.productList p.type {
+  font-style: italic;
+}
+
 .productList article .discounted {
   display: none;
 }
@@ -121,6 +125,13 @@ h6 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.productList article.onSale .price {
+  text-decoration: line-through;
+}
+
+.productList article.onSale .discounted p:nth-child(1) {
+  color: #d77a61;
 }
 
 .productList article.onSale .price span {

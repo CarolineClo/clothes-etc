@@ -19,4 +19,14 @@ function showProduct(product) {
   document.querySelector(".productText h3").textContent =
     product.productdisplayname;
   document.querySelector(".productText h4").textContent = product.price;
+  document.querySelector(".productText .colour").textContent =
+    product.basecolour;
+  document.querySelector(".productInfo #styledesc").innerHTML =
+    product.styledesc;
+  document.querySelector(".productInfo #description").innerHTML =
+    product.description;
+  document.querySelector(".productInfo #brandname").textContent =
+    product.brandname;
+  document.querySelector(".productInfo #brandbio").textContent =
+    product.brandbio;
 }

@@ -18,7 +18,25 @@
     </header>
     <main>
       <h2>NIKE</h2>
-      <article class="onSale">
+      <template id="productListedTemplate">
+        <article class="productListed">
+          <img
+            class="listedImg"
+            src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp"
+            alt="Sahara Team India Fanwear Roundneck Jersey"
+          />
+          <h3>Sahara Team India Fanwear Round Neck Jersey</h3>
+          <p class="type">Tshirts</p>
+          <p class="colour">Blue</p>
+          <p class="price"><span>Prev </span>895kr</p>
+          <div class="discounted">
+            <p>716kr</p>
+            <p>-20%</p>
+          </div>
+          <a href="product.html">Read more</a>
+        </article>
+      </template>
+      <!--<article class="productListed">
         <img
           src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp"
           alt="Sahara Team India Fanwear Roundneck Jersey"
@@ -29,10 +47,10 @@
         <div class="discounted">
           <p>NOW 716kr</p>
           <p>-20%</p>
-          <a href="product.html">Read more</a>
         </div>
+        <a href="product.html">Read more</a>
       </article>
-      <article>
+      <article class="productListed soldOut">
         <img
           src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp"
           alt="Sahara Team India Fanwear Roundneck Jersey"
@@ -43,10 +61,10 @@
         <div class="discounted">
           <p>NOW 716kr</p>
           <p>-20%</p>
-          <a href="product.html">Read more</a>
         </div>
+        <a href="product.html">Read more</a>
       </article>
-      <article class="soldOut">
+      <article class="productListed soldOut onSale">
         <img
           src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp"
           alt="Sahara Team India Fanwear Roundneck Jersey"
@@ -57,11 +75,11 @@
         <div class="discounted">
           <p>NOW 716kr</p>
           <p>-20%</p>
-          <a href="product.html">Read more</a>
         </div>
-      </article>
+        <a href="product.html">Read more</a>
+      </article>-->
     </main>
 
-    <script src="main.js"></script>
+    <script src="productList.js"></script>
   </body>
 </html>
