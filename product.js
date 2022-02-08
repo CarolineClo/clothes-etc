@@ -22,7 +22,9 @@ function showProduct(product) {
   document.querySelector(".product h2").textContent = product.brandname;
   document.querySelector(".productText h3").textContent =
     product.productdisplayname;
-  document.querySelector(".productText h4").textContent = product.price;
+  document.querySelector(
+    ".productText h4"
+  ).textContent = `${product.price} DKK`;
   document.querySelector(".productText .colour").textContent =
     product.basecolour;
   document.querySelector(".productInfo #styledesc").innerHTML =
