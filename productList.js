@@ -1,4 +1,4 @@
-const url = "https://kea-alt-del.dk/t7/api/products";
+const url = "https://kea-alt-del.dk/t7/api/products?brandname=puma&limit=20";
 
 fetch(url)
   .then(function (res) {
@@ -63,14 +63,10 @@ function showProduct(product) {
     product.discount
   }  ${"%"}`;
 
+  copy.querySelector("a").href += product.id;
+
   //grab parent
   const parent = document.querySelector("main");
   //append
   parent.appendChild(copy);
-  /* 
-<div class="discounted">
-            <p>NOW 716kr</p>
-            <p>-20%</p>
-          </div>
-*/
 }
