@@ -23,7 +23,8 @@ ol {
 
 h2 {
   font-family: noto-sans, sans-serif;
-  font-weight: 400;
+  font-weight: 600;
+  font-size: 1.6rem;
   color: #223843;
 }
 
@@ -70,7 +71,7 @@ header > h1 {
   font-size: 2.5rem;
 }
 
-nav > a {
+nav a {
   color: #eff1f3;
   font-family: noto-sans, sans-serif;
   font-weight: 400;
@@ -152,6 +153,34 @@ h4 {
   .product .breadcrumbs {
     grid-column: 1 / span 2;
   }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+  header h1 {
+    font-size: 3.6rem;
+    margin: 0;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    column-gap: 4rem;
+  }
+
+  nav a {
+    font-size: 1rem;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  nav {
+    display: flex;
+    align-items: center;
+    column-gap: 8rem;
+  }
 }
 
 footer {
@@ -170,7 +199,7 @@ h6 {
 @media screen and (min-width: 760px) {
   .productList main {
     display: grid;
-    column-gap: 3rem;
+    column-gap: 5rem;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   }
 }
@@ -182,7 +211,8 @@ h6 {
 .productList article {
   display: flex;
   flex-direction: column;
-  padding: 3rem 0;
+  max-width: 300px;
+  padding-bottom: 4rem;
 }
 
 .productList p {
@@ -220,8 +250,8 @@ h6 {
 
 .productList article .discounted p:last-child {
   background-color: #d77a61;
-  margin: 0 2rem 0 0;
   padding: 1rem;
+  border-radius: 5px;
 }
 
 .productList article .discounted p:first-child {

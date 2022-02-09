@@ -45,7 +45,7 @@ function showProduct(product) {
 
   copy.querySelector(
     ".type"
-  ).textContent = `${product.articletype} ${product.usagetype} ${product.brandname}`;
+  ).textContent = `${product.articletype} ${product.usagetype} `;
   copy.querySelector(".colour").textContent = product.basecolour;
   copy.querySelector(".price").textContent = `${product.price} DKK`;
   copy.querySelector("h3").textContent = product.productdisplayname;
@@ -55,9 +55,9 @@ function showProduct(product) {
   if (product.discount) {
     copy.querySelector("article").classList.add("onSale");
   }
-  copy.querySelector(".discounted p").textContent = `${
-    product.price - (product.discount / 100) * product.price
-  } DKK`;
+  copy.querySelector(".discounted p").textContent =
+    Math.round(product.price - (product.discount / 100) * product.price) +
+    " DKK";
 
   copy.querySelector(".discounted p:nth-of-type(2)").textContent = `${
     product.discount
