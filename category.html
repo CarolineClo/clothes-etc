@@ -9,7 +9,7 @@
   </head>
   <body>
     <header>
-      <h1>Clothes etc.</h1>
+      <h1>CLOTHES ETC.</h1>
       <nav>
         <a href="#">Categories</a>
         <a href="category.html">Brands</a>
@@ -17,17 +17,21 @@
       </nav>
     </header>
     <main class="category">
-      <div class="browseBrands">
-        <section class="letterBrowse" id="letterA">
+      <template id="categoryTemplate">
+        <article class="letterBrowse">
           <h3>A</h3>
           <ul>
-            <li><a href="productlist.html">Adidas</a></li>
+            <li class="letter">
+              <a href="productlist.html?brandname=">Adidas</a>
+            </li>
             <li><a href="productlist.html">Acne Studios</a></li>
             <li><a href="productlist.html">Alexander McQueen</a></li>
             <li><a href="productlist.html">Allsaints</a></li>
           </ul>
-        </section>
-        <section class="letterBrowse" id="letterB">
+        </article>
+      </template>
+
+      <!-- <section class="letterBrowse" id="letterB">
           <h3>B</h3>
           <ul>
             <li><a href="productlist.html">Adidas</a></li>
@@ -62,8 +66,7 @@
             <li><a href="productlist.html">Alexander McQueen</a></li>
             <li><a href="productlist.html">Allsaints</a></li>
           </ul>
-        </section>
-      </div>
+        </section>-->
     </main>
     <footer>
       <h6>
@@ -71,6 +74,6 @@
         Caroline Cloughley.
       </h6>
     </footer>
-    <script src="main.js"></script>
+    <script src="category.js"></script>
   </body>
 </html>
