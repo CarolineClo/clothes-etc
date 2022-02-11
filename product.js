@@ -25,8 +25,8 @@ function showProduct(product) {
   document.querySelector(
     ".productText h4"
   ).textContent = `${product.price} DKK`;
-  document.querySelector(".productText .colour").textContent =
-    product.basecolour;
+  /*document.querySelector(".productText .colour").textContent =
+    product.basecolour;*/
   document.querySelector(".productInfo #styledesc").innerHTML =
     product.styledesc;
   document.querySelector(".productInfo #description").innerHTML =

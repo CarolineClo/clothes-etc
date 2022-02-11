@@ -34,7 +34,7 @@ function showProduct(product) {
   const copy = template.cloneNode(true);
   //change content
   copy.querySelector("a").textContent = product.brandname;
-  //make the href conect to a product list of just brandname
+  //make the href conect to a product list of brandnames
   copy.querySelector("a").href += product.brandname;
 
   //grab parent

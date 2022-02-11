@@ -1,13 +1,33 @@
 @import url("https://use.typekit.net/fob6gvd.css");
 
+:root {
+  --header-font: mixta-didone, serif;
+  --body-font: noto-sans, sans-serif;
+  --primary-color: #223843;
+  --seondary-colour: #d77a61;
+  --bright-color: #ff5e2e;
+}
+
+h2,
+h3,
+h4,
+p,
+a {
+  font-family: var(--body-font);
+  color: var(--primary-color);
+}
+
+a:hover {
+  color: var(--bright-color);
+}
+
 body {
   margin: 0;
-  padding: 0;
   background-color: #eff1f3;
 }
 
 header {
-  background-color: #223843;
+  background-color: var(--primary-color);
   padding: 1rem;
 }
 
@@ -16,25 +36,24 @@ main {
 }
 
 ol {
-  font-family: noto-sans, sans-serif;
+  font-family: var(--body-font);
   font-weight: 400;
   color: #223843;
 }
 
 h2 {
-  font-family: noto-sans, sans-serif;
   font-weight: 600;
   font-size: 1.6rem;
   color: #223843;
 }
 
 img {
-  border: #ff5e2e 1px solid;
+  border: #223843 1px solid;
   border-radius: 5px;
 }
 
 form {
-  font-family: noto-sans, sans-serif;
+  font-family: var(--body-font);
   font-weight: 400;
   color: #223843;
   margin: 1rem 0;
@@ -44,7 +63,7 @@ button {
   color: #dbd3d8;
   font-size: 1.8rem;
   border-radius: 5px;
-  font-family: noto-sans, sans-serif;
+  font-family: var(--body-font);
   font-weight: 400;
   background-color: #223843;
 }
@@ -57,14 +76,14 @@ select {
 }
 
 p {
-  font-family: noto-sans, sans-serif;
+  font-family: n(--body-font);
   font-weight: 400;
   color: #223843;
 }
 
 header > h1 {
-  color: #ff5e2e;
-  font-family: mixta-didone, serif;
+  color: var(--bright-color);
+  font-family: var(--header-font);
   font-weight: 700;
   font-style: normal;
   margin: 0 0 0.5rem 0;
@@ -73,7 +92,7 @@ header > h1 {
 
 nav a {
   color: #eff1f3;
-  font-family: noto-sans, sans-serif;
+  font-family: var(--body-font);
   font-weight: 400;
   font-style: normal;
   font-size: 0.9rem;
@@ -103,7 +122,6 @@ nav a {
 }
 
 h3 {
-  font-family: noto-sans, sans-serif;
   font-weight: 600;
   color: #223843;
   margin: 0.5rem 0;
@@ -215,11 +233,15 @@ h6 {
   padding-bottom: 4rem;
 }
 
-.productList p {
+.productList a {
   margin: 0.5rem 0 0;
 }
 
 .productList p.type {
+  font-style: italic;
+}
+
+.productList p.colour {
   font-style: italic;
 }
 
@@ -249,7 +271,7 @@ h6 {
 }
 
 .productList article .discounted p:last-child {
-  background-color: #d77a61;
+  background-color: var(--bright-color);
   padding: 1rem;
   border-radius: 5px;
 }
@@ -275,7 +297,15 @@ h6 {
   margin: 1rem;
 }
 
-.category section.letterBrowse ul {
+/*.category article.letterBrowse ul {
+  list-style: none;
+}*/
+
+.category a {
+  text-decoration: none;
+}
+
+.category li {
   list-style: none;
 }
 
@@ -283,6 +313,7 @@ h6 {
   .category {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
   }
 }
 

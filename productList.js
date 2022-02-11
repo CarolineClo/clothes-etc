@@ -3,7 +3,7 @@
 const urlParams = new URLSearchParams(window.location.search);
 const query = urlParams.get("brandname");
 
-const url = `https://kea-alt-del.dk/t7/api/products?brandname${query}`;
+const url = "https://kea-alt-del.dk/t7/api/products?brandname=" + query;
 console.log(url);
 
 fetch(url)
