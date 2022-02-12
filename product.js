@@ -30,7 +30,7 @@ function showProduct(product) {
     .querySelector("ol .brand")
     .setAttribute(
       "href",
-      `ProductList.html?product&brandname=${product.brandname}`
+      `productList.html?product&brandname=${product.brandname}`
     );
   /*document.querySelector(".productText .colour").textContent =
     product.basecolour;*/

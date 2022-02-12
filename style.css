@@ -208,6 +208,7 @@ h4 {
     align-items: center;
     column-gap: 8rem;
   }
+
 }
 
 footer {
@@ -341,5 +342,26 @@ h6 {
   .category .browseBrands {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .product p{
+    font-size: 1.5rem;
+  }
+
+  .product h4{
+    font-size: 2rem;
+  }
+
+.product h2{
+  padding-bottom: 2rem;
+  font-size: 2rem;
+}
+
+  .product form{
+    font-size: 1.5rem;
+  }
+
+  .product main{
+    padding:4rem;
   }
 }
