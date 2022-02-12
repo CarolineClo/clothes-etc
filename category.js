@@ -35,7 +35,12 @@ function showProduct(product) {
   //change content
   copy.querySelector("a").textContent = product.brandname;
   //make the href conect to a product list of brandnames
-  copy.querySelector("a").href += product.brandname;
+  copy
+    .querySelector("a")
+    .setAttribute(
+      "href",
+      `ProductList.html?product&brandname=${product.brandname}`
+    );
 
   //grab parent
   const parent = document.querySelector("main");

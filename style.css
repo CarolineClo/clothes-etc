@@ -292,9 +292,13 @@ h6 {
   padding: 1rem;
 }
 
-.category article.letterBrowse {
+/*.category .letterBrowse {
   border-top: 1px solid black;
   margin: 1rem;
+}*/
+
+.category h3 {
+  border-bottom: var(--primary-color) solid 2px;
 }
 
 /*.category article.letterBrowse ul {
@@ -305,15 +309,14 @@ h6 {
   text-decoration: none;
 }
 
-.category li {
-  list-style: none;
-}
-
 @media screen and (min-width: 760px) {
   .category {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(6, 1fr);
     gap: 1.5rem;
+  }
+  h3 {
+    grid-column: 1 / -1;
   }
 }
 

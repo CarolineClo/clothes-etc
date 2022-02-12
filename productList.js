@@ -1,10 +1,10 @@
 /*const url = "https://kea-alt-del.dk/t7/api/products?brandname=puma&limit=20";*/
 
 const urlParams = new URLSearchParams(window.location.search);
-const query = urlParams.get("brandname");
+const brandname = urlParams.get("brandname");
 
-const url = "https://kea-alt-del.dk/t7/api/products?brandname=" + query;
-console.log(url);
+const url = "https://kea-alt-del.dk/t7/api/products?brandname=" + brandname;
+console.log(urlParams.get("brandname"));
 
 fetch(url)
   .then(function (res) {
