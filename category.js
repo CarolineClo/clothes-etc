@@ -39,7 +39,7 @@ function showProduct(product) {
     .querySelector("a")
     .setAttribute(
       "href",
-      `productList.html?product&brandname=${product.brandname}`
+      `productlist.html?product&brandname=${product.brandname}`
     );
 
   //grab parent
