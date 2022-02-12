@@ -1,11 +1,13 @@
 @import url("https://use.typekit.net/fob6gvd.css");
 
+
 :root {
   --header-font: mixta-didone, serif;
   --body-font: noto-sans, sans-serif;
   --primary-color: #223843;
   --seondary-colour: #d77a61;
   --bright-color: #ff5e2e;
+  --brands-font:font-family: new-order, sans-serif;
 }
 
 h2,
@@ -48,7 +50,7 @@ h2 {
 }
 
 img {
-  border: #223843 1px solid;
+  border: var(--seondary-colour) 1px solid;
   border-radius: 5px;
 }
 
@@ -292,21 +294,28 @@ h6 {
   padding: 1rem;
 }
 
-/*.category .letterBrowse {
-  border-top: 1px solid black;
-  margin: 1rem;
-}*/
+.category{
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+}
 
 .category h3 {
   border-bottom: var(--primary-color) solid 2px;
+    grid-column: 1 / -1;
+    font-size: 2rem;
 }
 
-/*.category article.letterBrowse ul {
-  list-style: none;
-}*/
 
 .category a {
   text-decoration: none;
+}
+
+.category article.brandName {
+  border-right: var(--bright-color) 1px solid;
+  display: flex;
+  justify-content: center;
+  font-family: var(--brands-font);
+  font-weight: 500;
 }
 
 @media screen and (min-width: 760px) {
@@ -315,9 +324,7 @@ h6 {
     grid-template-columns: repeat(6, 1fr);
     gap: 1.5rem;
   }
-  h3 {
-    grid-column: 1 / -1;
-  }
+
 }
 
 @media screen and (min-width: 1000px) {

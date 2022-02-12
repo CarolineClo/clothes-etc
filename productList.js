@@ -36,7 +36,6 @@ function showProduct(product) {
   copy.querySelector(
     ".type"
   ).textContent = `${product.brandname} ${product.usagetype} `;
-  copy.querySelector(".colour").textContent = product.basecolour;
   copy.querySelector(".price").textContent = `${product.price} DKK`;
 
   copy.querySelector("h3").textContent = product.productdisplayname;
