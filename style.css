@@ -75,6 +75,7 @@ select {
   color: #223843;
   border-radius: 5px;
   padding: 0.5rem;
+  margin-left:2rem;
 }
 
 p {
@@ -151,6 +152,10 @@ h4 {
   margin: 0.5rem 0;
 }
 
+
+  
+
+
 @media screen and (min-width: 760px) {
   .product main {
     display: grid;
@@ -164,10 +169,12 @@ h4 {
   .productText {
     display: flex;
     padding: 0 2rem;
+    justify-content: space-around;
   }
 
   .productInfo {
-    padding: 0 2rem;
+    padding:  2rem 0;
+    grid-column: 1/ -1;
   }
 
   .product .breadcrumbs {
@@ -297,12 +304,15 @@ h6 {
 .category{
   display:grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
 }
 
 .category h3 {
   border-bottom: var(--primary-color) solid 2px;
     grid-column: 1 / -1;
     font-size: 2rem;
+    margin:0;
+    padding:1.5rem;
 }
 
 
