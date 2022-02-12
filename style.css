@@ -33,6 +33,16 @@ header {
   padding: 1rem;
 }
 
+header a {
+  color: var(--bright-color);
+  text-decoration: none;
+  font-family: var(--header-font);
+}
+
+header a:hover{
+  color:var(--seondary-colour);
+}
+
 main {
   margin: 2rem;
 }
